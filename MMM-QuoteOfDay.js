@@ -7,10 +7,6 @@ Module.register("MMM-QuoteOfDay", {
 		animationSpeed: 2.5 * 1000
 	},
 
-	getStyles: function () {
-		return ["MMM-QuoteOfDay.css"];
-	},
-
 	getTranslations: function () {
 		return {
 			en: "translations/en.json",
