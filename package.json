@@ -1,0 +1,12 @@
+{
+    "name": "mmm-quoteofday",
+    "version": "1.0.0",
+    "author": "Th0be",
+    "description": "Quote of day module for the Magic Mirror.",
+    "license": "MIT",
+    "repository": "https://github.com/Th0be/MMM-QuoteOfDay",
+    "dependencies": {
+        "node-schedule": "latest",
+        "node-fetch": "latest"
+    }
+}
