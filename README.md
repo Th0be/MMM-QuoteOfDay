@@ -45,5 +45,5 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
 ## To do list
 + Add localization for supported languages by quotes
 
-## Issues a pull request
-If you find any issues with this module, feel free to open a issue or fix it and make a pull request in this repository.
+## Issues and pull request
+If you find any issues with this module, feel free to open a issue or to fix it and make a pull request in this repository.
