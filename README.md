@@ -1,20 +1,25 @@
 # MMM-QuoteOfDay
 Module shows fetched quote of day from [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/) in supported language. New quote is fetched every midnight.
 
-![module MMM-QuoteOfDay](screenshots/screenshot_quoteofday.png)
+![Quote Of Day module screenshot](screenshots/screenshot_quoteofday.png)
 
 ## Installation
 Register on [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/) and copy your X-RapidAPI-Key.
 
-![module MMM-QuoteOfDay](screenshots/screenshot_rapidapi.png)
-
-Navigate into MagicMirror's Module folder using terminal:
+![RapidAPI key screenshot](screenshots/screenshot_rapidapi.png)
+ 
+Navigate into MagicMirror's modules folder using terminal:
 ```
 cd ~/MagicMirror/modules
 ```
 Clone this repository using following command: 
 ```
 git clone https://github.com/Th0be/MMM-QuoteOfDay.git
+```
+Navigate into module folder and install dependencies using:
+```
+cd MMM-QuoteOfDay
+npm install
 ```
 Add the following text to ```MagicMirror/config/config.js``` to activate the module.
 ```
@@ -37,5 +42,8 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
 | showAuthor | ```boolean``` | ```true``` | Show author's name. |
 | animationSpeed | ```number```  | ```2.5 * 1000``` | Animation speed of quote changing in milliseconds. |
 
-## Issues
-If you find any issues with this module, feel free to open a GitHub issue in this repository or you can fix it and make pull request.
+## To do list
++ Add localization for supported languages by quotes
+
+## Issues a pull request
+If you find any issues with this module, feel free to open a issue or fix it and make a pull request in this repository.
