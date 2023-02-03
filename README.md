@@ -21,7 +21,7 @@ Navigate into module folder and install dependencies using:
 cd MMM-QuoteOfDay
 npm install
 ```
-Add the following text to ```MagicMirror/config/config.js``` to activate the module.
+Add the following text to ```MagicMirror/config/config.js``` to activate the module:
 ```
 {
     module: "QuoteOfDay",
