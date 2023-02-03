@@ -36,7 +36,6 @@ Module.register("MMM-QuoteOfDay", {
 		var quote = document.createElement("div");
 		var quoteTitle = document.createElement("div");
 
-		wrapper.id = "quoteofday-wrapper";
 		quoteTitle.className = "light small dimmed";
 		quote.className = "bright medium light";
 

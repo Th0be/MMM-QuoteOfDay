@@ -40,7 +40,7 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
 | language | ```string```  | ```en``` |  Supported languages for quotes are ```en``` ```es``` ```pt``` ```it``` ```de``` ```fr``` ```cs``` ```sk```. |
 | showTitle | ```boolean```  | ```true``` | Show title of module. |
 | showAuthor | ```boolean``` | ```true``` | Show author's name. |
-| animationSpeed | ```number```  | ```2.5 * 1000``` | Animation speed of quote changing in milliseconds. |
+| animationSpeed | ```number```  | ```2.5 * 1000``` | Animation speed of quote change in milliseconds. |
 
 ## To do list
 + Add localization for supported languages by quotes
