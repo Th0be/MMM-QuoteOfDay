@@ -7,6 +7,6 @@
     "repository": "https://github.com/Th0be/MMM-QuoteOfDay",
     "dependencies": {
         "node-schedule": "latest",
-        "node-fetch": "latest"
+        "axios": "latest"
     }
 }

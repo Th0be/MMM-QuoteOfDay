@@ -1,6 +1,6 @@
-var NodeHelper = require("node_helper");
-var schedule = require("node-schedule");
-var fetch = require("node-fetch");
+const NodeHelper = require("node_helper");
+const schedule = require("node-schedule");
+const axios = require("axios");
 
 module.exports = NodeHelper.create({
 	start: function () {
@@ -11,7 +11,7 @@ module.exports = NodeHelper.create({
 	socketNotificationReceived: function (notification, payload) {
 		this.config = payload;
 		if (notification === "GET_QUOTE") {
-			if (this.config.api_key !== "") {
+			if (this.config.apiKey !== "") {
 				if (this.quote === null) {
 					this.fetchQuote();
 					schedule.scheduleJob("0 0 * * *", () => {
@@ -30,13 +30,13 @@ module.exports = NodeHelper.create({
 		const options = {
 			method: "GET",
 			headers: {
-				"X-RapidAPI-Key": this.config.api_key,
+				"X-RapidAPI-Key": this.config.apiKey,
 				"X-RapidAPI-Host": "quotes15.p.rapidapi.com"
 			}
 		};
 		try {
-			const response = await fetch(url, options);
-			this.quote = await response.json();
+			const response = await axios.request(url, options);
+			this.quote = await response.data;
 			this.sendSocketNotification("QUOTE", this.quote);
 			console.log("Quote fetch was successful");
 		} catch (error) {

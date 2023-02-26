@@ -24,10 +24,10 @@ npm install
 Add the following text to ```MagicMirror/config/config.js``` to activate the module:
 ```
 {
-    module: "QuoteOfDay",
+    module: "MMM-QuoteOfDay",
     position: "bottom_bar", // You can change this to your desired position, but I recommend bottom bar.
     config: {
-        api_key: // Insert here your X-RapidAPI-Key. Required.
+        apiKey: ""// Insert here your X-RapidAPI-Key. Required.
         // Here you can insert options listed below.
     }
 },
@@ -36,7 +36,7 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
 ## Configuration options
 | **Option** | **Type**  | **Default** | **Description** |
 | ---------- | --------- | ----------- | --------------- |
-| api_key | ```string```  | ``` ``` | ```REQUIRED``` Your X-RapidAPI-Key from [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/). |
+| apiKey | ```string```  | ``` ``` | ```REQUIRED``` Your X-RapidAPI-Key from [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/). |
 | language | ```string```  | ```en``` |  Supported languages for quotes are ```en``` ```es``` ```pt``` ```it``` ```de``` ```fr``` ```cs``` ```sk```. |
 | showTitle | ```boolean```  | ```true``` | Show title of module. |
 | showAuthor | ```boolean``` | ```true``` | Show author's name. |
