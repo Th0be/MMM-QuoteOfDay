@@ -1,5 +1,5 @@
 {
     "TITLE": "Quote of day",
 	"LOADING": "Loading...",
-    "FETCH_ERROR": "Data fetch fail"
+    "FETCH_ERROR": "Data fetch failed"
 }
