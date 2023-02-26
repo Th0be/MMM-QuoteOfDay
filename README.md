@@ -1,7 +1,7 @@
 # MMM-QuoteOfDay
 Module shows fetched quote of day from [Quotes API](https://rapidapi.com/martin.svoboda/api/quotes15/) in supported language. New quote is fetched every midnight.
 
-![Quote Of Day module screenshot](screenshots/screenshot_quoteofday.png)
+![Quote Of Day module screenshot](screenshot_quoteofday.png)
 
 ## Installation
 Register on [RapidAPI](https://rapidapi.com/hub) and copy your X-RapidAPI-Key (You can find it [here](https://rapidapi.com/martin.svoboda/api/quotes15/)).
