@@ -1,13 +1,10 @@
 # MMM-QuoteOfDay
-Module shows fetched quote of day from [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/) in supported language. New quote is fetched every midnight.
+Module shows fetched quote of day from [Quotes API](https://rapidapi.com/martin.svoboda/api/quotes15/) in supported language. New quote is fetched every midnight.
 
 ![Quote Of Day module screenshot](screenshots/screenshot_quoteofday.png)
 
 ## Installation
-Register on [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/) and copy your X-RapidAPI-Key.
-
-![RapidAPI key screenshot](screenshots/screenshot_rapidapi.png)
- 
+Register on [RapidAPI](https://rapidapi.com/hub) and copy your X-RapidAPI-Key (You can find it [here](https://rapidapi.com/martin.svoboda/api/quotes15/)).
 Navigate into MagicMirror's modules folder using terminal:
 ```
 cd ~/MagicMirror/modules
@@ -27,7 +24,7 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
     module: "MMM-QuoteOfDay",
     position: "bottom_bar", // You can change this to your desired position, but I recommend bottom bar.
     config: {
-        apiKey: ""// Insert here your X-RapidAPI-Key. Required.
+        apiKey: ""// Insert here your X-RapidAPI-Key. Required!
         // Here you can insert options listed below.
     }
 },
@@ -36,7 +33,7 @@ Add the following text to ```MagicMirror/config/config.js``` to activate the mod
 ## Configuration options
 | **Option** | **Type**  | **Default** | **Description** |
 | ---------- | --------- | ----------- | --------------- |
-| apiKey | ```string```  | ``` ``` | ```REQUIRED``` Your X-RapidAPI-Key from [RapidAPI](https://rapidapi.com/martin.svoboda/api/quotes15/). |
+| apiKey | ```string```  | ``` ``` | ```REQUIRED``` Your X-RapidAPI-Key from RapidAPI (You can find it [here](https://rapidapi.com/martin.svoboda/api/quotes15/). |
 | language | ```string```  | ```en``` |  Supported languages for quotes are ```en``` ```es``` ```pt``` ```it``` ```de``` ```fr``` ```cs``` ```sk```. |
 | showTitle | ```boolean```  | ```true``` | Show title of module. |
 | showAuthor | ```boolean``` | ```true``` | Show author's name. |
